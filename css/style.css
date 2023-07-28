@@ -358,7 +358,63 @@ a:focus-visible {
 }
 
 @media screen and (max-width: 900px) {
+  .contact_deatils_form {
+    grid-template-columns: 1fr;
+  }
+  .features_wrapper {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .about_wrapper {
+    gap: 1rem;
+  }
+
+  .left_text .seconday_title,
+  .secondary_text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar_container {
+    flex-direction: column;
+  }
+
   .features {
     width: auto;
+  }
+
+  .hero_content {
+    width: 100%;
+    padding-block: 1rem;
+  }
+  .hero_title {
+    font-size: 32px;
+  }
+  .bg_img {
+    border-bottom-left-radius: 20px;
+  }
+
+  .features_wrapper {
+    flex-direction: column;
+  }
+  .about_wrapper {
+    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+  .about_wrapper > div {
+    width: 100%;
+  }
+
+  .contact_wrapper {
+    padding: 2rem 10px;
+  }
+
+  .contact_detail {
+    padding: 1rem;
+  }
+
+  .same_row {
+    flex-direction: column;
   }
 }
