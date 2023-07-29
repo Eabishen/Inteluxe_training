@@ -1,13 +1,14 @@
 const navbar = document.querySelector("#nav_custom");
+const elementToCheck = document.getElementById("elementToCheck");
 
 // To know scrolling
 let isScrollingDown = false;
 
 const navbarBG = () => {
-  if (!isScrollingDown && window.scrollY > 30) {
+  if (!isScrollingDown && window.scrollY > 40) {
     navbar.classList.add("stickycont");
     isScrollingDown = true;
-  } else if (isScrollingDown && window.scrollY <= 20) {
+  } else if (isScrollingDown && window.scrollY <= 10) {
     navbar.classList.remove("stickycont");
     isScrollingDown = false;
   }
@@ -32,13 +33,9 @@ document.addEventListener("resize", navbarHeightfinder);
 //To Check Element Position in the Screen using getBoundingClientRect method and
 // set it as CSS variables to use
 
-const elementToCheck = document.getElementById("elementToCheck");
-
 function checkElementPosition() {
   const rect = elementToCheck.getBoundingClientRect();
-
   document.documentElement.style.setProperty("--start-point", rect.left + "px");
-
   document.documentElement.style.setProperty("--end-point", rect.right + "px");
 }
 
