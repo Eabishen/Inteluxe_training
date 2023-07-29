@@ -4,7 +4,7 @@ const navbar = document.querySelector("#nav_custom");
 let isScrollingDown = false;
 
 const navbarBG = () => {
-  if (!isScrollingDown && window.scrollY > 20) {
+  if (!isScrollingDown && window.scrollY > 30) {
     navbar.classList.add("stickycont");
     isScrollingDown = true;
   } else if (isScrollingDown && window.scrollY <= 20) {
