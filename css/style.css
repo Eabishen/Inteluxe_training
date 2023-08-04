@@ -10,6 +10,7 @@
   --primary-color: #cda274;
   --dark-color: #292f36;
   --light-color: #f4f0ec;
+  --line-color:#f9f4ef;
 
   /* Dynamic height */
   --navbar-height: 0;
@@ -70,7 +71,7 @@ a {
   z-index: -1;
   bottom: 0;
   width: 2px;
-  background-color: #f9f4ef;
+  background-color: var(--line-color);
 }
 
 .pos1 {

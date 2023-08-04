@@ -27,8 +27,8 @@ const navbarHeightfinder = () => {
   );
 };
 document.addEventListener("DOMContentLoaded", navbarHeightfinder);
-
 document.addEventListener("resize", navbarHeightfinder);
+
 
 //To Check Element Position in the Screen using getBoundingClientRect method and
 // set it as CSS variables to use
