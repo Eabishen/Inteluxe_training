@@ -1,3 +1,3 @@
-# Inteluxe_training
+# Project Inteluxe
 
 This a test project.

@@ -343,11 +343,54 @@ a:focus-visible {
   align-items: center;
   gap: 1rem;
 }
+.button_group{
+  margin-top: auto;
 
+}
 .button_group button {
   margin-inline: auto;
-  margin-top: auto;
 }
+
+      
+#footer_section{
+  padding-block: 2rem;
+}
+
+.footer_wrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.footer_desc{
+  margin-block: 1rem;
+}
+
+.socails{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.socialIcons a{
+  padding: 10px;
+}
+
+.footer_links{
+  display: grid;
+  justify-content: center;
+}
+
+.footer_cover{
+  display: grid;
+  gap: 1.5rem;
+}
+
+.footer_linkheader{
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
 
 @media screen and (min-width: 510px) and (max-width: 900px) {
   .container {
@@ -422,5 +465,18 @@ a:focus-visible {
 
   .same_row {
     flex-direction: column;
+  }
+
+  .footer_wrapper{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer_links{
+    justify-content: start; 
+  }
+
+  .footer_cover{
+    gap: 1rem;
   }
 }
